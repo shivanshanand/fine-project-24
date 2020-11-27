@@ -13,7 +13,7 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	paper1=new paper(100,50,20);
+	paper1=new paper(100,50,40);
 	wall1=new wall(740,370,170,20);
 	wall2=new wall(650,330,20,100);
 	wall3=new wall(820,330,20,100);
@@ -33,7 +33,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:60,y:-70});
+		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:60,y:-80});
 	}
 }
 
